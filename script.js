@@ -7,6 +7,9 @@ gsap.from("#for-fade" ,{
     duration:5
 })
 
+gsap.from(".nav" ,{
+    y:10,
+})
 
 gsap.from(".char", {
     duration:2.5,
@@ -41,7 +44,7 @@ const t2=new SplitType(".info-txt")
 var t3  = gsap.timeline({
     scrollTrigger: {
         trigger: ".page3-part1",
-        markers: "true",
+        markers: "false",
         start: "0% 50%",
         end: "0% 50%",
         scrub: 1,
@@ -59,7 +62,7 @@ t3.from("#info-txt" , {
 var t4  = gsap.timeline({
     scrollTrigger: {
         trigger: ".page3-part2",
-        markers: "true",
+        markers: "false",
         start: "0% 50%",
         end: "0% 50%",
         scrub: 1,
